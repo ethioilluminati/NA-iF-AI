@@ -1,23 +1,23 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>NA’iF AI – Superhuman Full Stack Engineer</title>
-        <meta name="description" content="From Idea to App – with AI" />
+        <title>NA’iF AI – Superhuman Engineer Platform</title>
+        <meta name="description" content="From Zero to Hero – Build Web & Mobile Apps via Chat" />
       </Head>
       <main className={styles.main}>
-        <h1>👨‍💻 NA’iF AI Infinity Mode</h1>
-        <p>Build web & mobile apps with AI, paywall, and dashboards.</p>
-        <div className={styles.grid}>
-          <Link href="/chat"><a className={styles.card}>⚙️ AI Builder</a></Link>
-          <Link href="/dashboard"><a className={styles.card}>📊 Dashboard</a></Link>
-          <Link href="/login"><a className={styles.card}>🔐 Login</a></Link>
-          <Link href="/pricing"><a className={styles.card}>💳 Pricing</a></Link>
-        </div>
+        <h1>Welcome to NA’iF AI</h1>
+        <p>Your Superhuman Full Stack Engineer</p>
+        <Link href="/chat">
+          <button>Launch AI Chat Builder</button>
+        </Link>
+        <Link href="/dashboard">
+          <button>User Dashboard</button>
+        </Link>
       </main>
     </div>
   );
